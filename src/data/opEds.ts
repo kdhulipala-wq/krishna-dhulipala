@@ -10,25 +10,14 @@ export interface OpEd {
 export const opEds: OpEd[] = [
   {
     id: '1',
-    title: 'The Case Against Bucket Lists',
-    slug: 'the-case-against-bucket-lists',
-    createdAt: '2025-12-01',
-    summary: 'Why reducing travel to a checklist might be the worst thing we\'ve done to the concept of exploration.',
-    content: `Somewhere along the way, travel stopped being about curiosity and started being about completion. The bucket list — that cheerful inventory of must-see destinations and must-do experiences — has become the dominant framework for how we think about seeing the world. And I think it's making us worse travelers.
-
-The problem isn't aspiration. Wanting to see the Northern Lights or walk the Camino de Santiago is perfectly reasonable. The problem is the list itself: the implication that travel is a series of items to be checked off, that the value of an experience lies primarily in having had it rather than in what it meant.
-
-I've watched people at Machu Picchu spend more time framing their Instagram shot than looking at the ruins. I've seen travelers in Kyoto sprint between temples, ticking them off a guidebook list, never spending more than fifteen minutes at any single one. The list creates urgency where none should exist.
-
-There's also the homogenization problem. Bucket lists tend to converge on the same thirty or forty destinations, creating a monoculture of travel aspiration. Everyone wants to see Santorini, Bali, Iceland, and the Amalfi Coast — not because they've thought deeply about what moves them, but because the algorithm showed them a sunset reel.
-
-What gets lost is the accidental discovery — the village you stopped in because the bus broke down, the restaurant you found because you took a wrong turn, the conversation with a stranger that changed how you thought about something. These moments can't be listed in advance because they don't exist until you're open to them.
-
-I'm not arguing against planning. Having a rough sense of where you're going and why is sensible. But there's a difference between planning and itemizing, between intention and inventory. The best trips I've taken were the ones where the plan dissolved on contact with reality and something better took its place.
-
-Travel should be a practice of attention, not accumulation. The question shouldn't be "how many places have you been?" but "how deeply did you see the places you went?"`,
+    title: 'I\'m Not a Big Fan of the Government',
+    slug: 'not-a-big-fan-of-the-government',
+    createdAt: '2026-04-01',
+    summary: 'Opining on the motivations of the American-Israeli world hegemony',
+    content: `More on this later. I am not suicidal :D`
+    //content: `Somewhere along the way, my country lost its footing.`,
   },
-  {
+  /*{
     id: '2',
     title: 'Why Nobody Reads Anymore (And Why That\'s Wrong)',
     slug: 'why-nobody-reads-anymore',
@@ -75,5 +64,5 @@ Sometimes you just need to sit on a balcony and watch the Atlantic for a while. 
 The Portuguese have a word for this: saudade isn't quite right, but the general coastal Portuguese vibe of unhurried melancholy comes close. They've built an entire culture around sitting in cafes, eating pastéis de nata, and staring at the ocean. They seem, on the whole, like they're doing fine.
 
 My only regret from that week is that it was only a week. Next time I'm going for two.`,
-  },
+  },*/
 ];

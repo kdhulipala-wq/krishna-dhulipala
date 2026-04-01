@@ -12,27 +12,15 @@ export interface Story {
 export const stories: Story[] = [
   {
     id: '1',
-    title: 'A Week in Kyoto',
-    slug: 'a-week-in-kyoto',
-    createdAt: '2025-11-15',
-    imageUrl: 'images/kyoto.svg',
-    imageAlt: 'A traditional torii gate in Kyoto surrounded by autumn leaves',
-    imageCaption: 'Fushimi Inari Taisha at golden hour — the crowds thin out if you go late enough.',
-    content: `The train from Osaka rolled into Kyoto Station with the kind of quiet precision you'd expect. No fanfare, no delay — just doors opening onto a city that has spent fourteen centuries perfecting the art of understatement.
-
-I'd planned loosely: a few temples, a bamboo grove, some good food. But Kyoto doesn't really operate on itineraries. It operates on moments — the particular way light falls through maple leaves at Tofuku-ji, the shock of silence inside a moss garden, the elderly woman in full kimono who appeared to glide rather than walk along Philosopher's Path.
-
-The first morning I went to Fushimi Inari early, before the tourist buses arrived. The thousands of vermillion torii gates stretched up the mountainside like a sentence that refuses to end. I climbed for two hours, passing stone foxes and tiny shrines tucked into the forest, until the city below became a gray smear and the only sound was wind through cedar.
-
-Nishiki Market became my daily anchor. I'd wander through picking up grilled mochi, pickled vegetables, and matcha soft-serve, watching vendors who'd clearly been doing this for decades move with practiced economy. One fish seller, noticing me eyeing his display of fugu, simply shook his head and pointed me toward the safer mackerel sushi next door.
-
-The ryokan I stayed in — a traditional inn with tatami floors and futon bedding — served kaiseki dinners that were less meals and more meditations. Each course arrived in sequence: a clear broth with a single yuzu peel floating in it, sashimi arranged like a small garden, grilled ayu fish with its head still on, bowing slightly as if in apology.
-
-By the fourth day I'd stopped trying to see everything and started just sitting — in temple gardens, on canal bridges, at bus stops. Kyoto rewards patience more than ambition. The city reveals itself slowly, like a woodblock print being carved one layer at a time.
-
-I left on a Sunday morning, the shinkansen humming south toward Tokyo. Through the window, the last of the autumn color blurred past. I realized I'd barely taken any photos. Some places are better held in memory than on a screen.`,
+    title: 'My Balls Exploded in Jordan',
+    slug: 'balls-exploded-in-jordan',
+    createdAt: '2026-04-01',
+    imageUrl: 'images/camel.JPG',
+    imageAlt: 'A camel in the Wadi Rum',
+    imageCaption: 'An interesting trip in the most cucked country in the Middle East.',
+    content: `TODO, trip in Jordan. My balls exploded because I rode a camel for four days through the Wadi.`,
   },
-  {
+  /*{
     id: '2',
     title: 'Patagonia by Bus',
     slug: 'patagonia-by-bus',
@@ -75,5 +63,5 @@ I ate my way through the souks: lamb tagine with preserved lemons, pigeon pastil
 The tanneries themselves are medieval in the most literal sense. Workers stand waist-deep in stone vats of dye, scraping and soaking hides using methods unchanged in five hundred years. A guide handed me a sprig of mint to hold under my nose. It didn't help much.
 
 On my last evening, I climbed to the rooftop of a tea house near the Koutoubia Mosque. The call to prayer drifted across the rooftops as the sky turned pink, and for a moment the entire city seemed to pause. Then someone below started an argument about a carpet, and the moment passed. That's Marrakech: the sublime and the transactional, always in the same breath.`,
-  },
+  },*/
 ];

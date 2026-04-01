@@ -3,7 +3,7 @@ export interface Review {
   title: string;
   slug: string;
   createdAt: string;
-  type: 'film' | 'book' | 'album';
+  type: 'film' | 'book' | 'album' | 'poem';
   imageUrl: string;
   imageAlt: string;
   imageCaption: string;
@@ -14,29 +14,17 @@ export interface Review {
 export const reviews: Review[] = [
   {
     id: '1',
-    title: 'The Banshees of Inisherin',
-    slug: 'the-banshees-of-inisherin',
-    createdAt: '2025-09-12',
-    type: 'film',
-    imageUrl: 'images/banshees.svg',
-    imageAlt: 'A lonely stone cottage on a windswept Irish island',
-    imageCaption: 'The island itself is as much a character as anyone on screen.',
-    rating: 9,
-    content: `Martin McDonagh's "The Banshees of Inisherin" is a film about a man who decides he no longer wants to be friends with another man, and the devastation that follows. That summary makes it sound small. It is not small.
-
-Set on a fictional island off the west coast of Ireland during the Civil War, the film follows Pádraic (Colin Farrell), a simple, kind dairy farmer, as he tries to understand why his lifelong friend Colm (Brendan Gleeson) has abruptly cut him off. Colm's explanation is both clear and brutal: he finds Pádraic dull, and he'd rather spend his remaining years composing music than listening to stories about a donkey.
-
-What follows is simultaneously funny and devastating — a comedy of escalation that becomes a tragedy of stubbornness. McDonagh has always been good at finding the violence inside politeness and the tenderness inside brutality, and here he's working at his peak.
-
-Farrell gives the performance of his career. His Pádraic is wounded, confused, and ultimately capable of a darkness that surprises even himself. Gleeson is magnificent as Colm — a man whose cruelty comes from despair rather than malice, who is essentially punishing his friend for reminding him that life is passing without sufficient meaning.
-
-The island setting is crucial. Inisherin is gorgeous and claustrophobic, a place where everyone knows everyone and privacy is a theoretical concept. The Civil War rumbles on the mainland — you can hear the shelling sometimes — but on the island, the real war is between two men who used to drink together every afternoon.
-
-Kerry Condon and Barry Keoghan are both extraordinary in supporting roles. Condon's Siobhán, Pádraic's sister, is the film's moral center — the only character smart enough to see the absurdity of the situation and brave enough to leave. Keoghan's Dominic is heartbreaking: a damaged, eager boy searching for any scrap of kindness in a place that has none to spare.
-
-The film's ending is ambiguous in the best way — not a resolution but a state of affairs, a new normal that is no one's version of victory. It lingers. I watched it three weeks ago and I'm still thinking about it.`,
+    title: 'The Tiger',
+    slug: 'the-tiger',
+    createdAt: '2026-04-01',
+    type: 'poem',
+    imageUrl: 'images/tiger.jpg',
+    imageAlt: 'By Nael, Age 6',
+    imageCaption: '',
+    rating: 10,
+    content: `It speaks for itself, I have no words.`,
   },
-  {
+  /*{
     id: '2',
     title: 'Dept. of Speculation by Jenny Offill',
     slug: 'dept-of-speculation',
@@ -103,5 +91,5 @@ There's a scene near the end where Nora, Arthur, and Hae Sung sit together at a 
 Greta Lee is extraordinary. She carries the weight of two identities — the Korean girl she was and the American woman she became — and lets you see both simultaneously. The final scene, which I won't describe, is one of the most emotionally devastating endings in recent cinema. The woman next to me in the theater was sobbing. I was not far behind.
 
 "Past Lives" is about the Korean concept of in-yun — the idea that even a casual encounter between strangers is the result of 8,000 layers of providence across past lives. It's a beautiful idea, and Song handles it with the lightness it deserves: not as metaphysics but as a way of honoring the weight of connection.`,
-  },
+  },*/
 ];
