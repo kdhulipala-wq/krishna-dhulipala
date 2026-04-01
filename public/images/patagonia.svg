@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600">
+  <defs>
+    <linearGradient id="pat-bg" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#1a3a52"/>
+      <stop offset="50%" stop-color="#3d6b8a"/>
+      <stop offset="100%" stop-color="#e8f4fc"/>
+    </linearGradient>
+    <linearGradient id="pat-peak" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#b8d4e8"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="600" fill="url(#pat-bg)"/>
+  <polygon points="0,420 200,180 400,380 600,140 800,400 800,600 0,600" fill="url(#pat-peak)" opacity="0.35"/>
+  <polygon points="150,600 400,220 650,600" fill="#d4e9f7" opacity="0.5"/>
+  <text x="400" y="305" text-anchor="middle" font-family="system-ui, sans-serif" font-size="48" font-weight="700" fill="#ffffff" letter-spacing="0.08em">Patagonia</text>
+  <text x="400" y="348" text-anchor="middle" font-family="system-ui, sans-serif" font-size="16" fill="#c5dff0">Ice &amp; mountains</text>
+</svg>

@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600">
+  <defs>
+    <linearGradient id="g3-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#87ceeb"/>
+      <stop offset="45%" stop-color="#b8e8f5"/>
+      <stop offset="100%" stop-color="#ffffff"/>
+    </linearGradient>
+    <linearGradient id="g3-water" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#5dade2"/>
+      <stop offset="100%" stop-color="#2874a6"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="600" fill="url(#g3-bg)"/>
+  <polygon points="0,280 200,120 400,200 600,100 800,260 800,600 0,600" fill="#eaf7fc" opacity="0.9"/>
+  <rect y="380" width="800" height="220" fill="url(#g3-water)" opacity="0.55"/>
+  <ellipse cx="400" cy="400" rx="300" ry="25" fill="#aed6f1" opacity="0.4"/>
+  <text x="400" y="295" text-anchor="middle" font-family="system-ui, sans-serif" font-size="36" font-weight="600" fill="#1a5276">Mountain lake</text>
+  <text x="400" y="335" text-anchor="middle" font-family="system-ui, sans-serif" font-size="14" fill="#2874a6">Gallery 3</text>
+</svg>

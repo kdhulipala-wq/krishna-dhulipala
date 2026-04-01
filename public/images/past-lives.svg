@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600">
+  <defs>
+    <linearGradient id="pl-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0d1b2a"/>
+      <stop offset="50%" stop-color="#1b263b"/>
+      <stop offset="100%" stop-color="#2d3e5c"/>
+    </linearGradient>
+    <radialGradient id="pl-window" cx="50%" cy="40%" r="45%">
+      <stop offset="0%" stop-color="#ffb347" stop-opacity="0.45"/>
+      <stop offset="100%" stop-color="transparent"/>
+    </radialGradient>
+  </defs>
+  <rect width="800" height="600" fill="url(#pl-bg)"/>
+  <rect width="800" height="600" fill="url(#pl-window)"/>
+  <rect x="100" y="80" width="600" height="4" fill="#415a77" opacity="0.5"/>
+  <g opacity="0.25" fill="#778da9">
+    <rect x="120" y="420" width="8" height="140"/>
+    <rect x="672" y="420" width="8" height="140"/>
+  </g>
+  <text x="400" y="295" text-anchor="middle" font-family="system-ui, sans-serif" font-size="48" font-weight="300" fill="#e0e1dd" letter-spacing="0.2em">Past Lives</text>
+  <text x="400" y="340" text-anchor="middle" font-family="system-ui, sans-serif" font-size="16" fill="#ffb347">City night</text>
+</svg>

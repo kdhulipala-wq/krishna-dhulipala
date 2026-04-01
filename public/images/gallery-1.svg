@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600">
+  <defs>
+    <linearGradient id="g1-sky" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#6b4c9a"/>
+      <stop offset="40%" stop-color="#c94b7c"/>
+      <stop offset="70%" stop-color="#ff7b54"/>
+      <stop offset="100%" stop-color="#ffb347"/>
+    </linearGradient>
+    <linearGradient id="g1-sea" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#2a1a4a"/>
+      <stop offset="100%" stop-color="#1a0f2e"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="320" fill="url(#g1-sky)"/>
+  <rect y="320" width="800" height="280" fill="url(#g1-sea)"/>
+  <ellipse cx="400" cy="340" rx="120" ry="28" fill="#ff9a6c" opacity="0.35"/>
+  <path d="M0 320 Q200 300 400 320 T800 315 L800 600 L0 600 Z" fill="#3d2b5c" opacity="0.4"/>
+  <text x="400" y="295" text-anchor="middle" font-family="system-ui, sans-serif" font-size="36" font-weight="600" fill="#fff5f0">Ocean sunset</text>
+  <text x="400" y="335" text-anchor="middle" font-family="system-ui, sans-serif" font-size="14" fill="#ffd4c4" opacity="0.9">Gallery 1</text>
+</svg>

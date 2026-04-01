@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600">
+  <defs>
+    <linearGradient id="kyoto-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#c94c2d"/>
+      <stop offset="45%" stop-color="#e85d3a"/>
+      <stop offset="100%" stop-color="#f4a261"/>
+    </linearGradient>
+    <radialGradient id="kyoto-glow" cx="70%" cy="30%" r="55%">
+      <stop offset="0%" stop-color="#ffd4a8" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="transparent"/>
+    </radialGradient>
+  </defs>
+  <rect width="800" height="600" fill="url(#kyoto-bg)"/>
+  <rect width="800" height="600" fill="url(#kyoto-glow)"/>
+  <ellipse cx="200" cy="480" rx="180" ry="40" fill="#8b2e1f" opacity="0.25"/>
+  <ellipse cx="600" cy="520" rx="220" ry="50" fill="#6b1f14" opacity="0.2"/>
+  <text x="400" y="310" text-anchor="middle" font-family="Georgia, serif" font-size="52" font-weight="600" fill="#fff8f0" stroke="#4a1510" stroke-width="1" paint-order="stroke fill">Kyoto</text>
+  <text x="400" y="355" text-anchor="middle" font-family="Georgia, serif" font-size="18" fill="#ffe8d6" opacity="0.9">Autumn leaves</text>
+</svg>

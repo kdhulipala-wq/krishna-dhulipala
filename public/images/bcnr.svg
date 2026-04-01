@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600">
+  <defs>
+    <linearGradient id="bcnr-bg" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#4a148c"/>
+      <stop offset="35%" stop-color="#7b1fa2"/>
+      <stop offset="70%" stop-color="#e91e8c"/>
+      <stop offset="100%" stop-color="#ff80ab"/>
+    </linearGradient>
+    <linearGradient id="bcnr-stripe" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#ffffff" stop-opacity="0.15"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="600" fill="url(#bcnr-bg)"/>
+  <polygon points="0,0 300,600 350,600 50,0" fill="url(#bcnr-stripe)"/>
+  <polygon points="450,0 750,600 800,600 500,0" fill="url(#bcnr-stripe)"/>
+  <circle cx="150" cy="120" r="80" fill="#ff4081" opacity="0.2"/>
+  <circle cx="680" cy="480" r="100" fill="#9c27b0" opacity="0.25"/>
+  <text x="400" y="305" text-anchor="middle" font-family="system-ui, sans-serif" font-size="56" font-weight="800" fill="#ffffff" letter-spacing="0.12em">BCNR</text>
+  <text x="400" y="350" text-anchor="middle" font-family="system-ui, sans-serif" font-size="15" fill="#ffcce0">Abstract</text>
+</svg>

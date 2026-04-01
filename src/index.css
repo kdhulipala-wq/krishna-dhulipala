@@ -1,0 +1,21 @@
+@import "tailwindcss";
+
+@theme {
+  --color-forest-50: #f2f4ed;
+  --color-forest-100: #e3e7d8;
+  --color-forest-200: #cdd3ba;
+  --color-forest-300: #a8b18e;
+  --color-forest-400: #84906a;
+  --color-forest-500: #657350;
+  --color-forest-600: #4e5a3b;
+  --color-forest-700: #3c4630;
+  --color-forest-800: #2c3423;
+  --color-forest-900: #1e2518;
+  --color-forest-950: #0f130c;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}

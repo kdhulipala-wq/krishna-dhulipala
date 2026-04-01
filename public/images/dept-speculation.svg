@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600">
+  <defs>
+    <linearGradient id="dept-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#5c4033"/>
+      <stop offset="50%" stop-color="#8b6914"/>
+      <stop offset="100%" stop-color="#f5ebe0"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="600" fill="url(#dept-bg)"/>
+  <rect x="120" y="140" width="560" height="380" rx="6" fill="#faf6f0" opacity="0.12" stroke="#3d2b22" stroke-width="2"/>
+  <rect x="280" y="200" width="240" height="16" rx="2" fill="#e8dcc8" opacity="0.25"/>
+  <rect x="300" y="240" width="200" height="12" rx="2" fill="#dccfb8" opacity="0.2"/>
+  <ellipse cx="400" cy="480" rx="60" ry="18" fill="#2c1810" opacity="0.35"/>
+  <text x="400" y="285" text-anchor="middle" font-family="Georgia, serif" font-size="32" font-weight="600" fill="#faf3ea">Dept. of</text>
+  <text x="400" y="328" text-anchor="middle" font-family="Georgia, serif" font-size="32" font-weight="600" fill="#fff9f2">Speculation</text>
+  <text x="400" y="368" text-anchor="middle" font-family="Georgia, serif" font-size="15" fill="#e8ddd0">Book &amp; coffee</text>
+</svg>
