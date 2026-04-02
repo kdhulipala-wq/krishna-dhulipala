@@ -1,21 +1,22 @@
 import { useState } from 'react';
 import { photos } from '../data/photos';
-import type { Photo } from '../data/photos';
 import { asset } from '../utils/assets';
 import Lightbox from '../components/Lightbox';
 
 export default function GalleryPage() {
-  const [selectedPhoto, setSelectedPhoto] = useState<Photo | null>(null);
+  const [selectedIndex, setSelectedIndex] = useState<number | null>(null);
+
+  const selectedPhoto = selectedIndex !== null ? photos[selectedIndex] : null;
 
   return (
     <div className="space-y-8">
-      <h1 className="text-3xl font-bold text-[#2c3423]">Photo Gallery</h1>
+      <h1 className="text-3xl font-bold text-[#e8e0d4]">Photo Gallery</h1>
 
       <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
-        {photos.map((photo) => (
+        {photos.map((photo, i) => (
           <button
-            key={photo.id}
-            onClick={() => setSelectedPhoto(photo)}
+            key={i}
+            onClick={() => setSelectedIndex(i)}
             className="group relative aspect-square overflow-hidden rounded-lg bg-forest-200 focus:outline-none focus:ring-2 focus:ring-forest-400 focus:ring-offset-2"
           >
             <img
@@ -28,10 +29,12 @@ export default function GalleryPage() {
         ))}
       </div>
 
-      {selectedPhoto && (
+      {selectedPhoto && selectedIndex !== null && (
         <Lightbox
           photo={selectedPhoto}
-          onClose={() => setSelectedPhoto(null)}
+          onClose={() => setSelectedIndex(null)}
+          onPrev={selectedIndex > 0 ? () => setSelectedIndex(selectedIndex - 1) : undefined}
+          onNext={selectedIndex < photos.length - 1 ? () => setSelectedIndex(selectedIndex + 1) : undefined}
         />
       )}
     </div>

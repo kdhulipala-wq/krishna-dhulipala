@@ -16,8 +16,8 @@ export default function OpEdDetailPage() {
   if (!opEd) {
     return (
       <div className="text-center py-16">
-        <h1 className="text-2xl font-bold text-[#2c3423]">Op-Ed not found</h1>
-        <Link to="/op-eds" className="mt-4 inline-block text-[#2c3423] hover:text-[#2c3423] underline">
+        <h1 className="text-2xl font-bold text-[#e8e0d4]">Op-Ed not found</h1>
+        <Link to="/op-eds" className="mt-4 inline-block text-[#FF8C00] hover:text-[#FF8C00] underline">
           Back to Op-Eds
         </Link>
       </div>
@@ -30,21 +30,21 @@ export default function OpEdDetailPage() {
     <article className="space-y-6">
       <Link
         to="/op-eds"
-        className="inline-flex items-center gap-1 text-sm text-[#2c3423] hover:text-[#2c3423] transition-colors"
+        className="inline-flex items-center gap-1 text-sm text-[#FF8C00] hover:text-[#FFA333] hover:scale-105 transition-all origin-left"
       >
         &larr; Back to Op-Eds
       </Link>
 
       <header>
-        <h1 className="text-3xl sm:text-4xl font-bold text-[#2c3423] leading-tight">
+        <h1 className="text-3xl sm:text-4xl font-bold text-[#e8e0d4] leading-tight">
           {opEd.title}
         </h1>
-        <time className="mt-2 block text-sm text-[#2c3423]">
+        <time className="mt-2 block text-sm text-[#e8e0d4]/70">
           {formatDate(opEd.createdAt)}
         </time>
       </header>
 
-      <div className="text-[#2c3423] leading-relaxed space-y-4">
+      <div className="text-[#e8e0d4] leading-relaxed space-y-4">
         {paragraphs.map((p, i) => (
           <p key={i}>{p}</p>
         ))}

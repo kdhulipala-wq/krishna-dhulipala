@@ -8,13 +8,13 @@ interface SortToggleProps {
 export default function SortToggle({ sortMode, onChange }: SortToggleProps) {
   return (
     <div className="flex items-center gap-2 text-sm">
-      <span className="text-[#2c3423] font-medium">Sort by:</span>
+      <span className="text-[#FF8C00] font-medium">Sort by:</span>
       <button
         onClick={() => onChange('title')}
         className={`px-3 py-1 rounded-md transition-colors ${
           sortMode === 'title'
-            ? 'bg-[#2c3423] text-[#2c3423]'
-            : 'bg-forest-100 text-[#2c3423] hover:bg-forest-200'
+            ? 'bg-[#FF8C00] text-white'
+            : 'bg-forest-100 text-[#FF8C00] hover:bg-forest-200'
         }`}
       >
         Title
@@ -23,8 +23,8 @@ export default function SortToggle({ sortMode, onChange }: SortToggleProps) {
         onClick={() => onChange('date')}
         className={`px-3 py-1 rounded-md transition-colors ${
           sortMode === 'date'
-            ? 'bg-[#2c3423] text-[#2c3423]'
-            : 'bg-forest-100 text-[#2c3423] hover:bg-forest-200'
+            ? 'bg-[#FF8C00] text-white'
+            : 'bg-forest-100 text-[#FF8C00] hover:bg-forest-200'
         }`}
       >
         Date

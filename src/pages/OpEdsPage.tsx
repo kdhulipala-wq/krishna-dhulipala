@@ -20,7 +20,7 @@ export default function OpEdsPage() {
   return (
     <div className="space-y-8">
       <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
-        <h1 className="text-3xl font-bold text-[#2c3423]">Op-Eds</h1>
+        <h1 className="text-3xl font-bold text-[#e8e0d4]">Op-Eds</h1>
         <SortToggle sortMode={sortMode} onChange={setSortMode} />
       </div>
 
@@ -29,16 +29,16 @@ export default function OpEdsPage() {
           <Link
             key={opEd.id}
             to={`/op-eds/${opEd.slug}`}
-            className="group block p-5 rounded-xl border border-forest-200 bg-[#fafbf7] hover:border-forest-300 hover:shadow-md transition-all"
+            className="group block p-5 rounded-xl border border-black/20 bg-black/40 hover:border-black/30 hover:shadow-[0_8px_30px_rgba(0,0,0,0.35)] transition-all"
           >
-            <h2 className="text-xl font-semibold text-[#2c3423] group-hover:text-[#2c3423] transition-colors">
+            <h2 className="text-xl font-semibold text-[#e8e0d4] group-hover:text-white transition-colors">
               {opEd.title}
             </h2>
-            <time className="mt-1 block text-sm text-[#2c3423]">
+            <time className="mt-1 block text-sm text-[#e8e0d4]/70">
               {formatDate(opEd.createdAt)}
             </time>
             {opEd.summary && (
-              <p className="mt-2 text-sm text-[#2c3423] leading-relaxed">
+              <p className="mt-2 text-sm text-[#e8e0d4]/70 leading-relaxed">
                 {opEd.summary}
               </p>
             )}

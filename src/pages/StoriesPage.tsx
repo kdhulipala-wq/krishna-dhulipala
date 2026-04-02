@@ -21,7 +21,7 @@ export default function StoriesPage() {
   return (
     <div className="space-y-8">
       <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
-        <h1 className="text-3xl font-bold text-[#2c3423]">Stories</h1>
+        <h1 className="text-3xl font-bold text-[#e8e0d4]">Stories</h1>
         <SortToggle sortMode={sortMode} onChange={setSortMode} />
       </div>
 
@@ -30,10 +30,10 @@ export default function StoriesPage() {
           <Link
             key={story.id}
             to={`/stories/${story.slug}`}
-            className="group block rounded-xl border border-forest-200 bg-[#fafbf7] overflow-hidden hover:border-forest-300 hover:shadow-md transition-all"
+            className="group block rounded-xl border border-black/20 bg-black/40 overflow-hidden hover:border-black/30 hover:shadow-[0_8px_30px_rgba(0,0,0,0.35)] transition-all"
           >
             <div className="flex flex-col sm:flex-row">
-              <div className="sm:w-48 sm:h-48 h-48 shrink-0 overflow-hidden bg-forest-200">
+              <div className="sm:w-48 sm:h-48 h-48 shrink-0 overflow-hidden bg-black/20">
                 <img
                   src={asset(story.imageUrl)}
                   alt={story.imageAlt}
@@ -41,13 +41,13 @@ export default function StoriesPage() {
                 />
               </div>
               <div className="p-5 flex flex-col justify-center">
-                <h2 className="text-xl font-semibold text-[#2c3423] group-hover:text-[#2c3423] transition-colors">
+                <h2 className="text-xl font-semibold text-[#e8e0d4] group-hover:text-white transition-colors">
                   {story.title}
                 </h2>
-                <time className="mt-1 text-sm text-[#2c3423]">
+                <time className="mt-1 text-sm text-[#e8e0d4]/70">
                   {formatDate(story.createdAt)}
                 </time>
-                <p className="mt-2 text-sm text-[#2c3423] leading-relaxed line-clamp-2">
+                <p className="mt-2 text-sm text-[#e8e0d4]/70 leading-relaxed line-clamp-2">
                   {story.imageCaption}
                 </p>
               </div>

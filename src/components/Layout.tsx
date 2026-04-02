@@ -6,9 +6,14 @@ const navItems = [
   { to: '/op-eds', label: 'Op-Eds' },
   { to: '/reviews', label: 'Reviews' },
   { to: '/gallery', label: 'Photo Gallery' },
+  { to: '/contact', label: 'Contact Me' },
 ];
 
-export default function Layout() {
+interface LayoutProps {
+  onLogout?: () => void;
+}
+
+export default function Layout({ onLogout }: LayoutProps) {
   return (
     <div className="relative min-h-screen flex flex-col text-[#2c3423] bg-forest-50">
       <div
@@ -17,7 +22,7 @@ export default function Layout() {
           backgroundImage: `url(${asset('images/background.JPG')})`,
           backgroundRepeat: 'no-repeat',
           backgroundSize: 'cover',
-          backgroundPosition: 'center',
+          backgroundPosition: 'bottom center',
         }}
         aria-hidden="true"
       />
@@ -33,13 +38,12 @@ export default function Layout() {
         <div className="max-w-5xl mx-auto px-4 py-4 flex flex-col sm:flex-row items-center gap-3 sm:gap-8">
           <NavLink
             to="/"
-            className="flex items-center gap-2 text-2xl font-bold tracking-tight text-[#e8e0d4] hover:text-white transition-colors shrink-0 drop-shadow-[0_1px_2px_rgba(0,0,0,0.5)]"
+            className="shrink-0 hover:opacity-90 transition-opacity"
           >
-            Krishna Dhulipala
             <img
               src={asset('images/deer.png')}
-              alt=""
-              className="h-9 w-auto drop-shadow-[0_1px_2px_rgba(0,0,0,0.4)]"
+              alt="Home"
+              className="h-12 w-auto drop-shadow-[0_1px_2px_rgba(0,0,0,0.4)]"
             />
           </NavLink>
           <nav className="flex flex-wrap gap-1 sm:gap-2">
@@ -59,6 +63,15 @@ export default function Layout() {
               </NavLink>
             ))}
           </nav>
+          {onLogout && (
+            <button
+              onClick={onLogout}
+              className="ml-auto px-6 py-1 rounded-md border border-[#FF8C00]/60 text-[#FF8C00] hover:bg-[#FF8C00]/20 transition-colors leading-none"
+              aria-label="Log out"
+            >
+              <span className="inline-block scale-x-150 scale-y-75 text-base font-light">&#x2715;</span>
+            </button>
+          )}
         </div>
       </header>
 

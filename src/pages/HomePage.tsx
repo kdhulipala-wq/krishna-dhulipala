@@ -5,22 +5,22 @@ const sections = [
   {
     to: '/stories',
     title: 'Stories',
-    description: 'Travel journals and long-form narratives from places worth remembering.',
+    description: 'Friends and places and things oh my!',
   },
   {
     to: '/op-eds',
     title: 'Op-Eds',
-    description: 'Opinions on culture, travel, and the way we live now.',
+    description: 'Geopolitics and general venting',
   },
   {
     to: '/reviews',
     title: 'Reviews',
-    description: 'Thoughts on films, books, and albums that stuck around.',
+    description: 'Stuff I liked or did not like',
   },
   {
     to: '/gallery',
     title: 'Photo Gallery',
-    description: 'Pictures from the road — no filters, some captions.',
+    description: 'My favorite flicks',
   },
 ];
 
@@ -31,13 +31,9 @@ export default function HomePage() {
         <img
           src={asset('images/deer.png')}
           alt="Krishna's logo"
-          className="mx-auto h-40 sm:h-48 w-auto drop-shadow-[0_2px_4px_rgba(0,0,0,0.4)]"
+          className="mx-auto h-56 sm:h-72 w-auto drop-shadow-[0_2px_4px_rgba(0,0,0,0.4)]"
         />
-        <h1 className="text-4xl sm:text-5xl font-bold tracking-tight text-[#e8e0d4]">
-          Krishna Dhulipala
-        </h1>
         <p className="text-lg text-[#e8e0d4]/70 max-w-xl mx-auto leading-relaxed">
-          I dump many big poo poo in this here corner. Give them look see?
         </p>
       </div>
 

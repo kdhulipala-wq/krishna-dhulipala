@@ -17,8 +17,8 @@ export default function StoryDetailPage() {
   if (!story) {
     return (
       <div className="text-center py-16">
-        <h1 className="text-2xl font-bold text-[#2c3423]">Story not found</h1>
-        <Link to="/stories" className="mt-4 inline-block text-[#2c3423] hover:text-[#2c3423] underline">
+        <h1 className="text-2xl font-bold text-[#e8e0d4]">Story not found</h1>
+        <Link to="/stories" className="mt-4 inline-block text-[#FF8C00] hover:text-[#FF8C00] underline">
           Back to Stories
         </Link>
       </div>
@@ -31,16 +31,16 @@ export default function StoryDetailPage() {
     <article className="space-y-6">
       <Link
         to="/stories"
-        className="inline-flex items-center gap-1 text-sm text-[#2c3423] hover:text-[#2c3423] transition-colors"
+        className="inline-flex items-center gap-1 text-sm text-[#FF8C00] hover:text-[#FFA333] hover:scale-105 transition-all origin-left"
       >
         &larr; Back to Stories
       </Link>
 
       <header>
-        <h1 className="text-3xl sm:text-4xl font-bold text-[#2c3423] leading-tight">
+        <h1 className="text-3xl sm:text-4xl font-bold text-[#e8e0d4] leading-tight">
           {story.title}
         </h1>
-        <time className="mt-2 block text-sm text-[#2c3423]">
+        <time className="mt-2 block text-sm text-[#e8e0d4]/70">
           {formatDate(story.createdAt)}
         </time>
       </header>
@@ -52,12 +52,12 @@ export default function StoryDetailPage() {
             alt={story.imageAlt}
             className="w-full rounded-lg"
           />
-          <p className="mt-2 text-xs italic text-[#2c3423]">
+          <p className="mt-2 text-xs italic text-[#e8e0d4]/70">
             {story.imageCaption}
           </p>
         </div>
 
-        <div className="text-[#2c3423] leading-relaxed space-y-4">
+        <div className="text-[#e8e0d4] leading-relaxed space-y-4">
           {paragraphs.map((p, i) => (
             <p key={i}>{p}</p>
           ))}

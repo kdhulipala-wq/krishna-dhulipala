@@ -5,14 +5,18 @@ import { asset } from '../utils/assets';
 interface LightboxProps {
   photo: Photo;
   onClose: () => void;
+  onPrev?: () => void;
+  onNext?: () => void;
 }
 
-export default function Lightbox({ photo, onClose }: LightboxProps) {
+export default function Lightbox({ photo, onClose, onPrev, onNext }: LightboxProps) {
   const handleKeyDown = useCallback(
     (e: KeyboardEvent) => {
       if (e.key === 'Escape') onClose();
+      if (e.key === 'ArrowLeft' && onPrev) onPrev();
+      if (e.key === 'ArrowRight' && onNext) onNext();
     },
-    [onClose]
+    [onClose, onPrev, onNext]
   );
 
   useEffect(() => {
@@ -32,26 +36,39 @@ export default function Lightbox({ photo, onClose }: LightboxProps) {
       aria-modal="true"
       aria-label={photo.imageAlt}
     >
+      {onPrev && (
+        <button
+          onClick={(e) => { e.stopPropagation(); onPrev(); }}
+          className="absolute left-4 z-10 w-12 h-12 flex items-center justify-center rounded-full bg-white/10 text-white hover:bg-white/20 transition-colors text-2xl"
+          aria-label="Previous photo"
+        >
+          &#8249;
+        </button>
+      )}
+
       <div
         className="relative max-w-4xl w-full max-h-[90vh] flex flex-col items-center"
         onClick={(e) => e.stopPropagation()}
       >
-        <button
-          onClick={onClose}
-          className="absolute -top-2 -right-2 z-10 w-10 h-10 flex items-center justify-center rounded-full bg-white/10 text-white hover:bg-white/20 transition-colors text-xl"
-          aria-label="Close lightbox"
-        >
-          &times;
-        </button>
         <img
           src={asset(photo.imageUrl)}
           alt={photo.imageAlt}
           className="max-h-[80vh] w-auto max-w-full rounded-lg object-contain"
         />
-        <p className="mt-4 text-white/90 text-center text-sm italic max-w-xl">
+        <p className="mt-4 text-white/90 text-center text-sm italic max-w-xl whitespace-pre-line">
           {photo.caption}
         </p>
       </div>
+
+      {onNext && (
+        <button
+          onClick={(e) => { e.stopPropagation(); onNext(); }}
+          className="absolute right-4 z-10 w-12 h-12 flex items-center justify-center rounded-full bg-white/10 text-white hover:bg-white/20 transition-colors text-2xl"
+          aria-label="Next photo"
+        >
+          &#8250;
+        </button>
+      )}
     </div>
   );
 }
