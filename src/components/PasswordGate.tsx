@@ -1,7 +1,7 @@
 import { useState, useRef, useEffect } from 'react';
 import { asset } from '../utils/assets';
 
-const PASSWORD_HASH = 'a0afa16767b68035a4ae562410bc00b728bdba0fdd92cfb1dc76796fdef12fef';
+const PASSWORD_HASH = 'e1e3c587b04f3f2d7c6fdb3ad761e537d8785766bc2699f11ae2c33f9dfe8ecd';
 
 async function sha256(text: string): Promise<string> {
   const encoded = new TextEncoder().encode(text);
@@ -62,17 +62,17 @@ export default function PasswordGate({ onAuthenticated }: PasswordGateProps) {
 
         <form
           onSubmit={handleSubmit}
-          className={`relative bg-black/90 border rounded-lg px-6 py-4 min-w-[320px] transition-colors duration-200 ${
+          className={`relative bg-black/15 backdrop-blur-sm border rounded-lg px-6 py-4 min-w-[320px] transition-colors duration-200 ${
             shake
               ? 'animate-shake border-red-500/60 shadow-[0_0_20px_rgba(255,0,0,0.15)]'
-              : 'border-green-500/40 shadow-[0_0_20px_rgba(0,255,0,0.1)]'
+              : 'border-[#FF8C00]/40 shadow-[0_0_20px_rgba(255,140,0,0.1)]'
           }`}
         >
-          <div className={`flex items-center font-mono text-lg transition-colors duration-200 ${shake ? 'text-red-400' : 'text-green-400'}`}>
+          <div className={`flex items-center font-mono text-lg transition-colors duration-200 ${shake ? 'text-red-400' : 'text-[#FF8C00]'}`}>
             <span className="select-none mr-1">&gt;</span>
             <div className="relative flex-1">
               <span className="tracking-wider">{'*'.repeat(value.length)}</span>
-              <span className={`inline-block w-[2px] h-[1.2em] align-middle ml-[1px] animate-blink transition-colors duration-200 ${shake ? 'bg-red-400' : 'bg-green-400'}`} />
+              <span className={`inline-block w-[2px] h-[1.2em] align-middle ml-[1px] animate-blink transition-colors duration-200 ${shake ? 'bg-red-400' : 'bg-[#FF8C00]'}`} />
               <input
                 ref={inputRef}
                 type="password"

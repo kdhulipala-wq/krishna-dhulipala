@@ -2,18 +2,14 @@ import { NavLink, Outlet } from 'react-router-dom';
 import { asset } from '../utils/assets';
 
 const navItems = [
-  { to: '/stories', label: 'Stories' },
+  { to: '/gallery', label: 'Photos' },
   { to: '/op-eds', label: 'Op-Eds' },
   { to: '/reviews', label: 'Reviews' },
-  { to: '/gallery', label: 'Photo Gallery' },
-  { to: '/contact', label: 'Contact Me' },
+  { to: '/stories', label: 'Stories' },
+  { to: '/contact', label: 'Contact' },
 ];
 
-interface LayoutProps {
-  onLogout?: () => void;
-}
-
-export default function Layout({ onLogout }: LayoutProps) {
+export default function Layout() {
   return (
     <div className="relative min-h-screen flex flex-col text-[#2c3423] bg-forest-50">
       <div
@@ -27,13 +23,7 @@ export default function Layout({ onLogout }: LayoutProps) {
         aria-hidden="true"
       />
       <header
-        className="border-b border-black/20 sticky top-0 z-40 shadow-md"
-        style={{
-          backgroundImage: `url(${asset('images/header.JPG')})`,
-          backgroundRepeat: 'no-repeat',
-          backgroundSize: 'cover',
-          backgroundPosition: 'center',
-        }}
+        className="border-b border-black/20 sticky top-0 z-40 shadow-md bg-black/5 backdrop-blur-[2px]"
       >
         <div className="max-w-5xl mx-auto px-4 py-4 flex flex-col sm:flex-row items-center gap-3 sm:gap-8">
           <NavLink
@@ -63,15 +53,6 @@ export default function Layout({ onLogout }: LayoutProps) {
               </NavLink>
             ))}
           </nav>
-          {onLogout && (
-            <button
-              onClick={onLogout}
-              className="ml-auto px-6 py-1 rounded-md border border-[#FF8C00]/60 text-[#FF8C00] hover:bg-[#FF8C00]/20 transition-colors leading-none"
-              aria-label="Log out"
-            >
-              <span className="inline-block scale-x-150 scale-y-75 text-base font-light">&#x2715;</span>
-            </button>
-          )}
         </div>
       </header>
 

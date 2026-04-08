@@ -24,7 +24,7 @@ export default function App() {
   return (
     <HashRouter>
       <Routes>
-        <Route element={<Layout onLogout={() => { sessionStorage.removeItem('authenticated'); setAuthenticated(false); }} />}>
+        <Route element={<Layout />}>
           <Route path="/" element={<HomePage />} />
           <Route path="/stories" element={<StoriesPage />} />
           <Route path="/stories/:slug" element={<StoryDetailPage />} />

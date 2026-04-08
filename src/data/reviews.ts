@@ -22,6 +22,6 @@ export const reviews: Review[] = [
     imageAlt: 'By Nael, Age 6',
     imageCaption: '',
     rating: 5,
-    content: `It speaks for itself, I have no words.`,
+    content: `I have no words.`,
   },
 ];

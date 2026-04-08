@@ -3,24 +3,24 @@ import { asset } from '../utils/assets';
 
 const sections = [
   {
-    to: '/stories',
-    title: 'Stories',
+    to: '/gallery',
+    title: 'Photos',
     description: 'Friends and places and things oh my!',
   },
   {
     to: '/op-eds',
     title: 'Op-Eds',
-    description: 'Geopolitics and general venting',
+    description: 'General venting',
+  },
+  {
+    to: '/stories',
+    title: 'Stories',
+    description: 'In case I forget',
   },
   {
     to: '/reviews',
     title: 'Reviews',
     description: 'Stuff I liked or did not like',
-  },
-  {
-    to: '/gallery',
-    title: 'Photo Gallery',
-    description: 'My favorite flicks',
   },
 ];
 
