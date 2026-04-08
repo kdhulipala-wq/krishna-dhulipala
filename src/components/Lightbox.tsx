@@ -1,6 +1,8 @@
-import { useEffect, useCallback } from 'react';
+import { useEffect, useCallback, useRef } from 'react';
 import type { Photo } from '../data/photos';
 import { asset } from '../utils/assets';
+
+const SWIPE_THRESHOLD = 50;
 
 interface LightboxProps {
   photo: Photo;
@@ -10,6 +12,9 @@ interface LightboxProps {
 }
 
 export default function Lightbox({ photo, onClose, onPrev, onNext }: LightboxProps) {
+  const touchStartX = useRef<number | null>(null);
+  const touchStartY = useRef<number | null>(null);
+
   const handleKeyDown = useCallback(
     (e: KeyboardEvent) => {
       if (e.key === 'Escape') onClose();
@@ -28,10 +33,33 @@ export default function Lightbox({ photo, onClose, onPrev, onNext }: LightboxPro
     };
   }, [handleKeyDown]);
 
+  function handleTouchStart(e: React.TouchEvent) {
+    touchStartX.current = e.touches[0].clientX;
+    touchStartY.current = e.touches[0].clientY;
+  }
+
+  function handleTouchEnd(e: React.TouchEvent) {
+    if (touchStartX.current === null || touchStartY.current === null) return;
+
+    const dx = e.changedTouches[0].clientX - touchStartX.current;
+    const dy = e.changedTouches[0].clientY - touchStartY.current;
+
+    // Only count horizontal swipes (ignore vertical scrolling gestures)
+    if (Math.abs(dx) > SWIPE_THRESHOLD && Math.abs(dx) > Math.abs(dy)) {
+      if (dx < 0 && onNext) onNext();
+      if (dx > 0 && onPrev) onPrev();
+    }
+
+    touchStartX.current = null;
+    touchStartY.current = null;
+  }
+
   return (
     <div
       className="fixed inset-0 z-50 flex items-center justify-center bg-black/80 backdrop-blur-sm p-4"
       onClick={onClose}
+      onTouchStart={handleTouchStart}
+      onTouchEnd={handleTouchEnd}
       role="dialog"
       aria-modal="true"
       aria-label={photo.imageAlt}
@@ -46,16 +74,17 @@ export default function Lightbox({ photo, onClose, onPrev, onNext }: LightboxPro
         </button>
       )}
 
-      <div
-        className="relative max-w-4xl w-full max-h-[90vh] flex flex-col items-center"
-        onClick={(e) => e.stopPropagation()}
-      >
+      <div className="relative max-w-4xl w-full max-h-[90vh] flex flex-col items-center">
         <img
           src={asset(photo.imageUrl)}
           alt={photo.imageAlt}
+          onClick={(e) => e.stopPropagation()}
           className="max-h-[80vh] w-auto max-w-full rounded-lg object-contain"
         />
-        <p className="mt-4 text-white/90 text-center text-sm italic max-w-xl whitespace-pre-line">
+        <p
+          onClick={(e) => e.stopPropagation()}
+          className="mt-4 text-white/90 text-center text-sm italic max-w-xl whitespace-pre-line"
+        >
           {photo.caption}
         </p>
       </div>
