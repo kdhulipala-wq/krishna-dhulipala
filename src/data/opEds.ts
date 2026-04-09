@@ -4,6 +4,7 @@ export interface OpEd {
   slug: string;
   createdAt: string;
   summary: string;
+  epigraph?: string;
   content: string;
 }
 
@@ -12,8 +13,9 @@ export const opEds: OpEd[] = [
     id: '1',
     title: 'I\'m Not a Big Fan of the Government',
     slug: 'not-a-big-fan-of-the-government',
-    createdAt: '2026-04-01',
-    summary: 'Opining on the motivations of the American-Israeli world hegemony',
+    createdAt: '2026-04-08',
+    summary: 'Opining on the geopolitical mechanics of a very Judeo-Christian era',
+    epigraph: 'The Jews return to Zion, and a comet fills the sky,\nthe Holy Roman Empire rises, and you and I must die,\nfrom eternal sea he rises, amassing armies on either shore,\nturning man against his brother, \'till man exists — no more.',
     content: `More on this later. I am not suicidal :D`
     //content: `Somewhere along the way, my country lost its footing.`,
   },

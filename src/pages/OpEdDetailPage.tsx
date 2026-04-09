@@ -44,6 +44,12 @@ export default function OpEdDetailPage() {
         </time>
       </header>
 
+      {opEd.epigraph && (
+        <blockquote className="text-center italic text-[#e8e0d4]/80 whitespace-pre-line border-l-0 py-4 px-6 max-w-lg mx-auto leading-relaxed">
+          {opEd.epigraph}
+        </blockquote>
+      )}
+
       <div className="text-[#e8e0d4] leading-relaxed space-y-4">
         {paragraphs.map((p, i) => (
           <p key={i}>{p}</p>

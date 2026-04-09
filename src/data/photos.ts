@@ -9,7 +9,7 @@ export const photos: Photo[] = [
   {
     imageUrl: 'images/dvfilm2.JPG',
     imageAlt: 'Jeremy in death valley',
-    caption: 'Jeremy and I stop for a breather before the pass across the scree field between Towne Peak and the wreck of the Grumman SA-16A Albatross. Photo off August\'s 35mm film.',
+    caption: 'Jeremy and I stop for a breather before the pass across the scree field between Towne Peak and the wreck of the Grumman SA-16A Albatross.',
     createdAt: '2025-03-15',
   },
   {
@@ -21,7 +21,7 @@ export const photos: Photo[] = [
   {
     imageUrl: 'images/reed.jpg',
     imageAlt: 'Reed in Slab City',
-    caption: 'Reed sports a cheeky smirk as she peers from a jankwagon in Slab City, stolen off August\'s 35mm.',
+    caption: 'Reed sports a cheeky smirk as she peers from a jankwagon in Slab City.',
     createdAt: '2025-05-13',
   },
   // row

@@ -27,9 +27,11 @@ export default function Lightbox({ photo, onClose, onPrev, onNext }: LightboxPro
   useEffect(() => {
     document.addEventListener('keydown', handleKeyDown);
     document.body.style.overflow = 'hidden';
+    document.body.classList.add('lightbox-open');
     return () => {
       document.removeEventListener('keydown', handleKeyDown);
       document.body.style.overflow = '';
+      document.body.classList.remove('lightbox-open');
     };
   }, [handleKeyDown]);
 
