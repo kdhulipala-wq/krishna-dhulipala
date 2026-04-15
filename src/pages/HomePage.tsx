@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import { useSearchParams } from 'react-router-dom';
 import { photos } from '../data/photos';
 import { asset } from '../utils/assets';
@@ -24,27 +24,6 @@ export default function HomePage() {
   const pagePhotos = photos.slice(page * PER_PAGE, (page + 1) * PER_PAGE);
   const selectedPhoto = selectedIndex !== null ? photos[selectedIndex] : null;
 
-  useEffect(() => {
-    let cancelled = false;
-    const thumbPromises = pagePhotos.map((photo) =>
-      new Promise<void>((resolve) => {
-        const img = new Image();
-        img.onload = () => resolve();
-        img.onerror = () => resolve();
-        img.src = asset(thumbUrl(photo.imageUrl));
-      })
-    );
-
-    Promise.all(thumbPromises).then(() => {
-      if (cancelled) return;
-      pagePhotos.forEach((photo) => {
-        const img = new Image();
-        img.src = asset(photo.imageUrl);
-      });
-    });
-
-    return () => { cancelled = true; };
-  }, [page]);
 
   const pagination = totalPages > 1 ? (
     <div className="flex items-center justify-center gap-3">
