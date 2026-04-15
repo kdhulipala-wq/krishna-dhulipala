@@ -1,7 +1,7 @@
-import { useState } from 'react';
+// import { useState } from 'react';
 import { HashRouter, Routes, Route, Navigate } from 'react-router-dom';
 import Layout from './components/Layout';
-import PasswordGate from './components/PasswordGate';
+// import PasswordGate from './components/PasswordGate';
 import HomePage from './pages/HomePage';
 import StoriesPage from './pages/StoriesPage';
 import StoryDetailPage from './pages/StoryDetailPage';
@@ -13,13 +13,14 @@ import GalleryPage from './pages/GalleryPage';
 import ContactPage from './pages/ContactPage';
 
 export default function App() {
-  const [authenticated, setAuthenticated] = useState(
-    () => sessionStorage.getItem('authenticated') === '1'
-  );
-
-  if (!authenticated) {
-    return <PasswordGate onAuthenticated={() => setAuthenticated(true)} />;
-  }
+  // PASSWORD GATE — uncomment to re-enable
+  // const [authenticated, setAuthenticated] = useState(
+  //   () => sessionStorage.getItem('authenticated') === '1'
+  // );
+  //
+  // if (!authenticated) {
+  //   return <PasswordGate onAuthenticated={() => setAuthenticated(true)} />;
+  // }
 
   return (
     <HashRouter>

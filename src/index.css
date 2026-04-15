@@ -14,6 +14,10 @@
   --color-forest-950: #0f130c;
 }
 
+html, body {
+  background-color: #000;
+}
+
 body {
   font-family: 'Roboto', sans-serif;
   -webkit-font-smoothing: antialiased;

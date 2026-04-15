@@ -25,10 +25,25 @@ export default function HomePage() {
   const selectedPhoto = selectedIndex !== null ? photos[selectedIndex] : null;
 
   useEffect(() => {
-    pagePhotos.forEach((photo) => {
-      const img = new Image();
-      img.src = asset(photo.imageUrl);
+    let cancelled = false;
+    const thumbPromises = pagePhotos.map((photo) =>
+      new Promise<void>((resolve) => {
+        const img = new Image();
+        img.onload = () => resolve();
+        img.onerror = () => resolve();
+        img.src = asset(thumbUrl(photo.imageUrl));
+      })
+    );
+
+    Promise.all(thumbPromises).then(() => {
+      if (cancelled) return;
+      pagePhotos.forEach((photo) => {
+        const img = new Image();
+        img.src = asset(photo.imageUrl);
+      });
     });
+
+    return () => { cancelled = true; };
   }, [page]);
 
   const pagination = totalPages > 1 ? (
@@ -57,7 +72,7 @@ export default function HomePage() {
     <div className="space-y-8">
       {page === 0 && (
         <>
-          <div className="text-center py-4">
+          <div className="text-center py-20">
             <img
               src={asset('images/deer.png')}
               alt="Krishna's logo"
