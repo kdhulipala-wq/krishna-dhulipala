@@ -29,7 +29,7 @@ export default function OpEdsPage() {
           <Link
             key={opEd.id}
             to={`/op-eds/${opEd.slug}`}
-            className="group block p-5 rounded-xl border border-black/20 bg-black/40 hover:border-black/30 hover:shadow-[0_8px_30px_rgba(0,0,0,0.35)] transition-all"
+            className="group block p-5 rounded-xl border border-black/20 bg-black/40 hover:border-black/30 hover:shadow-[0_8px_30px_rgba(0,0,0,0.35)] transition-all text-center"
           >
             <h2 className="text-xl font-semibold text-[#e8e0d4] group-hover:text-white transition-colors">
               {opEd.title}

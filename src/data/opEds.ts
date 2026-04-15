@@ -14,11 +14,24 @@ export const opEds: OpEd[] = [
     title: 'I\'m Not a Big Fan of the Government',
     slug: 'not-a-big-fan-of-the-government',
     createdAt: '2026-04-08',
-    summary: 'Opining on the geopolitical mechanics of a very Judeo-Christian era',
-    epigraph: 'The Jews return to Zion, and a comet fills the sky,\nthe Holy Roman Empire rises, and you and I must die,\nfrom eternal sea he rises, amassing armies on either shore,\nturning man against his brother, \'till man exists — no more.',
-    content: `More on this later. I am not suicidal :D`
-    //content: `Somewhere along the way, my country lost its footing.`,
+    summary: 'Opinions on the mechanics of a very Judeo-Christian time',
+    epigraph: 'The Jews return to Zion, and a comet fills the sky,\nthe Holy Roman Empire rises, and you and I must die.\nFrom eternal sea he rises, creating armies on either shore,\nturning man against his brother, \'till man exists — no more.',
+    //content: `More on this later. I am not suicidal :D`
+    content: ``
   },
+
+
+/*I'd support a revolution but I'm too busy at my 9-5.*/
+
+  /*It's tough to say how one should feel about the world today. I don't want to be the guy holding a "THE END IS NIGH"
+    sign, since they come and go every single decade, and we're all still here. But certain decades are decidedly better
+    than others, for certain nations. In American history, I point to the decade following WWII as a particularly golden
+    era of growth and prosperity. More recently, I'd say the decade leading up to 9/11 lives in the minds of most Americans
+    as their "halcyon days back when".*/
+
+
+
+
   /*{
     id: '2',
     title: 'Why Nobody Reads Anymore (And Why That\'s Wrong)',

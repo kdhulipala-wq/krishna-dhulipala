@@ -2,7 +2,7 @@ import { NavLink, Outlet } from 'react-router-dom';
 import { asset } from '../utils/assets';
 
 const navItems = [
-  { to: '/gallery', label: 'Photos' },
+  //{ to: '/gallery', label: 'Photos' },
   { to: '/op-eds', label: 'Op-Eds' },
   { to: '/reviews', label: 'Reviews' },
   { to: '/stories', label: 'Stories' },

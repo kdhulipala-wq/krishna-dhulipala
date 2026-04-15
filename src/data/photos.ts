@@ -26,11 +26,11 @@ export const photos: Photo[] = [
   },
   // row
   {
-    imageUrl: 'images/abdullah.JPG',
-    imageAlt: 'Better a child driver than a child soldier',
-    caption: 'Chilling with his brothers sipping chai in a mud house when I first met him, Abdallah ibn Atallah gets ready to drive me through the mouth of the Wadi Rum in his dad\'s ancient Toyota Land Cruiser.',
-    createdAt: '2026-01-15',
-  },
+    imageUrl: 'images/russ-river.JPG',
+    imageAlt: 'The river party prior to embarkation',
+    caption: 'Thirteen strong on the banks of the Russian River -- truly a force to be reckoned with.',
+    createdAt: '2026-03-25',
+  }, 
   {
     imageUrl: 'images/sar-dog-morg.JPG',
     imageAlt: 'Sarah, Morgan, and dog at the Big Bodacious Beach Bonanza',
@@ -91,33 +91,33 @@ export const photos: Photo[] = [
   {
     imageUrl: 'images/arab.jpg',
     imageAlt: 'Young arab boy poses with rifle',
-    caption: 'Suspicious looking youth poses with his rifle.',
+    caption: 'This one\'s gonna come back to bite me if I ever run for political office.',
     createdAt: '2026-01-15',
   },
   {
     imageUrl: 'images/sierra.jpg',
     imageAlt: 'Eastern Sierra at sunrise',
-    caption: 'Lone Pine Peak and Mount Langley to its left glow pink at dawn.',
+    caption: 'A cold September dawn casts Lone Pine Peak and Mount Langley into a world of pink.',
     createdAt: '2025-09-15',
   },
   // row
   {
-    imageUrl: 'images/nazi_cat.jpg',
-    imageAlt: 'Cat sleeps next to graffiti',
-    caption: 'Cat sleeps next to a swastika at the Seapark in Varna, Bulgaria',
-    createdAt: '2025-07-25',
+    imageUrl: 'images/closeupDog.JPG',
+    imageAlt: 'Close up of Pippin',
+    caption: 'My dog sniffs the camera.',
+    createdAt: '2026-04-12',
   },
   {
-    imageUrl: 'images/fairy-house.JPG',
-    imageAlt: 'A Fairy house along the Russian River',
-    caption: 'Abode of a particularly tidy gnome near the Russian River.',
-    createdAt: '2026-03-15',
+    imageUrl: 'images/karenMorg.JPG',
+    imageAlt: 'Karen and Morgan boolin with the entire crew on the bluffs',
+    caption: 'Karen and Morgan make toe bracelets — on da bluffs, in da sacks.',
+    createdAt: '2026-01-30',
   },
   {
-    imageUrl: 'images/hunt-vodka.jpg',
-    imageAlt: 'Hunter at a party with vodka',
-    caption: 'Hunter caught, perhaps, with a bottle of vodka that wasn\'t exactly his?',
-    createdAt: '2025-09-15',
+    imageUrl: 'images/jackMalibu.JPG',
+    imageAlt: 'Jack watches a beta in Malibu',
+    caption: 'Jack gazes upwards at the new climbing route on a warm morning out at Malibu.',
+    createdAt: '2026-02-06',
   }, 
   // row
   {
@@ -133,11 +133,11 @@ export const photos: Photo[] = [
     createdAt: '2025-12-23',
   },
   {
-    imageUrl: 'images/russ-river.JPG',
-    imageAlt: 'The river party prior to embarkation',
-    caption: 'Thirteen strong on the banks of the Russian River -- truly a force to be reckoned with.',
-    createdAt: '2026-03-25',
-  }, 
+    imageUrl: 'images/abdullah.JPG',
+    imageAlt: 'Better a child driver than a child soldier',
+    caption: 'Chilling with his brothers sipping chai in a mud house when I first met him, Abdallah ibn Atallah gets ready to drive me through the mouth of the Wadi Rum in his dad\'s ancient Toyota Land Cruiser.',
+    createdAt: '2026-01-15',
+  },
   // row
   {
     imageUrl: 'images/horsies-syria.JPG',
@@ -381,11 +381,12 @@ export const photos: Photo[] = [
     caption: 'Midwinter snow falls on Anna and Wodina in the woods above the Potomac.',
     createdAt: '2026-01-29',
   },
+  // row ---------
   {
-    imageUrl: 'images/redrocks.JPG',
-    imageAlt: 'A day at red rocks',
-    caption: 'A day is never wasted at Red Rocks.',
-    createdAt: '2025-10-25',
+    imageUrl: 'images/greatMosque.JPG',
+    imageAlt: 'Great Mosque of Damascus',
+    caption: 'The inner square of the Great Mosque of Damascus.',
+    createdAt: '2025-12-22',
   },
   {
     imageUrl: 'images/slab-car.JPG',
@@ -399,11 +400,88 @@ export const photos: Photo[] = [
     caption: 'The fire blazes at Big Sur around a muted circle, seeing as to how we all saw Grant split his head open an hour before.',
     createdAt: '2025-11-01',
   },
+  // row ---------
   {
-    imageUrl: 'images/shatt.JPG',
-    imageAlt: 'Three wise men on the Shatt al-Arab.',
-    caption: 'The confluence of the Tigris and the Euphrates, where life appears more cinematic -- as it would be, this is the site of the biblical Garden of Eden.',
-    createdAt: '2025-12-31',
+    imageUrl: 'images/hunt_jack.jpg',
+    imageAlt: 'Hunter and Jack',
+    caption: 'I like this photo. What exactly could they be doing?',
+    createdAt: '2025-10-22',
+  },
+  {
+    imageUrl: 'images/redrocks.JPG',
+    imageAlt: 'A day at red rocks',
+    caption: 'A day is never wasted at Red Rocks.',
+    createdAt: '2025-09-25',
+  },
+  {
+    imageUrl: 'images/vapin_ona_worm.JPG',
+    imageAlt: 'Jerm vapes on a worm',
+    caption: 'Jeremy vapes on a worm.',
+    createdAt: '2026-04-14',
+  },
+  // row ---------
+  {
+    imageUrl: 'images/spire_rae.jpg',
+    imageAlt: 'The view north from Rae Lake 2',
+    caption: 'The way back home has never felt quite this far or lonely.',
+    createdAt: '2025-10-28',
+  },
+  {
+    imageUrl: 'images/booties.JPG',
+    imageAlt: 'Sippin on booties',
+    caption: 'Necking our booties at the biergarten.',
+    createdAt: '2025-09-18',
+  },
+  {
+    imageUrl: 'images/snek.jpg',
+    imageAlt: 'Snake found at sssands',
+    caption: 'We found a night snake at ssssands!',
+    createdAt: '2025-08-20',
+  },
+  // row ---------
+  {
+    imageUrl: 'images/daraa.JPG',
+    imageAlt: 'The shopkeep and his boy',
+    caption: 'The shopkeep and his boy in Busra Sham, just north of the Syria-Jordan border.',
+    createdAt: '2025-12-26',
+  },
+  {
+    imageUrl: 'images/monke.jpg',
+    imageAlt: 'Monkey photo',
+    caption: 'I didn\'t take this one, nor did one of my friends, but it speaks to me deeply.',
+    createdAt: '1969-10-10',
+  },
+  {
+    imageUrl: 'images/luka.jpg',
+    imageAlt: 'Luka sips a beer',
+    caption: 'Luka making love to a beer on the rocks.',
+    createdAt: '2025-10-09',
+  },
+  // row ---------
+  {
+    imageUrl: 'images/morg_cheeky.JPG',
+    imageAlt: 'Morg being cheeky',
+    caption: 'Wide-angled tomfoolery on the way back from the not-so-hot springs in Big Sur.',
+    createdAt: '2025-10-02',
+  },
+  {
+    imageUrl: 'images/maaloula.JPG',
+    imageAlt: 'The inner sanctum',
+    caption: 'The inner sanctum of the Church of Saint Thecla, Maaloula.',
+    createdAt: '2025-12-22',
+  },
+  {
+    imageUrl: 'images/reststop.jpg',
+    imageAlt: 'We rest behind a rock',
+    caption: 'Lunch on the way to Banner Peak consists of meat sticks, dried blueberries, and a block of parmesan.',
+    createdAt: '2025-10-30',
+  },
+   // row ---------
+   {
+    imageUrl: 'images/biergarten.jpg',
+    imageAlt: 'Last hurrahs at the biergarten',
+    caption: 'Last hurrahs at the biergarten with some of the best people on earth.',
+    createdAt: '2025-06-14',
   },
   {
     imageUrl: 'images/aug-seq.JPG',
@@ -412,11 +490,24 @@ export const photos: Photo[] = [
     createdAt: '2025-05-01',
   }, 
   {
+    imageUrl: 'images/shatt.JPG',
+    imageAlt: 'Three wise men on the Shatt al-Arab.',
+    caption: 'The confluence of the Tigris and the Euphrates, where life appears more cinematic -- as it would be, this is the site of the biblical Garden of Eden.',
+    createdAt: '2025-12-31',
+  },
+  {
+    imageUrl: 'images/daraa_cafe.jpg',
+    imageAlt: 'The cafe at Der\'aa',
+    caption: 'Time flows freely between honey-glazed nuts and Marlboro golds as we wait for our kibbeh in the cafe at Der\'aa.',
+    createdAt: '2025-12-27',
+  },
+  {
     imageUrl: 'images/jer-n-i.jpg',
     imageAlt: 'Jeremy and I',
     caption: 'Me and gang are like fish pussy, that shit\'s watertight!',
     createdAt: '2025-05-20',
   },
+  // row ---------
   {
     imageUrl: 'images/catbanana.JPG',
     imageAlt: 'A cat and some bananas',
@@ -435,4 +526,199 @@ export const photos: Photo[] = [
     caption: 'Exactly what I needed after a week of bay area wageslavery.',
     createdAt: '2026-03-28',
   },
+  // row ---------
+  {
+    imageUrl: 'images/hunt-vodka.jpg',
+    imageAlt: 'Hunter at a party with vodka',
+    caption: 'Hunter caught, perhaps, with a bottle of vodka that wasn\'t exactly his?',
+    createdAt: '2025-09-15',
+  }, 
+  {
+    imageUrl: 'images/fairy-house.JPG',
+    imageAlt: 'A Fairy house along the Russian River',
+    caption: 'Abode of a particularly tidy gnome near the Russian River.',
+    createdAt: '2026-03-15',
+  },
+  {
+    imageUrl: 'images/noah_me.JPG',
+    imageAlt: 'Rizzing up the hos at a function',
+    caption: 'Noah would appear to have an acute affinity for dressing in his girlfriend\'s clothes.',
+    createdAt: '2025-11-19',
+  },
+  // row ---------------
+  {
+    imageUrl: 'images/sarah_cat.JPG',
+    imageAlt: 'Sarah pokes a cat.',
+    caption: 'Sarah pokes a cat.',
+    createdAt: '2026-03-15',
+  }, 
+  {
+    imageUrl: 'images/jack_tanning.JPG',
+    imageAlt: 'Jack fucking around at carrizo',
+    caption: 'Jack amused at his own efforts to tan his butthole in the sunshine.',
+    createdAt: '2026-03-08',
+  },
+  {
+    imageUrl: 'images/nazi_cat.jpg',
+    imageAlt: 'Cat sleeps next to graffiti',
+    caption: 'Cat sleeps next to a swastika at the Seapark in Varna, Bulgaria',
+    createdAt: '2025-07-25',
+  },
+  // row ---------------
+  {
+    imageUrl: 'images/riley_dart.JPG',
+    imageAlt: 'Riley kills a lebanese marlboro in Morgan\'s garage.',
+    caption: 'Riley kills a Lebanese marlboro in Morgan\'s garage.',
+    createdAt: '2026-02-07',
+  }, 
+  {
+    imageUrl: 'images/in_car.JPG',
+    imageAlt: 'Packed into Big Bertha on the way downtown',
+    caption: 'Like sardines in a can.',
+    createdAt: '2025-10-10',
+  },
+  {
+    imageUrl: 'images/jer_lue.JPG',
+    imageAlt: 'Jeremy and dog',
+    caption: 'Jeremy ragebaiting the dog.',
+    createdAt: '2026-03-12',
+  },
+  // row ---------------
+  {
+    imageUrl: 'images/rachel-exc.JPG',
+    imageAlt: 'Rachel and the excursion flag',
+    caption: 'Rachel stands proud beneath the flag of Excursion Club. Iwo Jima, 1945.',
+    createdAt: '2026-02-01',
+  }, 
+  {
+    imageUrl: 'images/dam_outskirts.jpg',
+    imageAlt: 'Desctruction in the outskirts of Damascus.',
+    caption: 'Destruction in the outskirts of Damascus where Assad\'s commanders used barrel bombs on civilian tenement buildings.',
+    createdAt: '2025-12-23',
+  },
+  {
+    imageUrl: 'images/partyy.JPG',
+    imageAlt: 'American night at Abrego house.',
+    caption: 'American night at the Abrego house. A kraft singles cheese fight transpired shortly after, during which Hunter clearly had his way with Robby.',
+    createdAt: '2025-04-16',
+  },
+  {
+    imageUrl: 'images/jer_n_hunt.JPEG',
+    imageAlt: 'Jeremy and Hunter',
+    caption: 'Hunter and Jeremy, Irish House, circa 2025.',
+    createdAt: '2025-02-01',
+  }, 
+  {
+    imageUrl: 'images/hammock_morning.JPG',
+    imageAlt: 'Morning after hammock camping at Ellwood',
+    caption: 'The willow branches burn with morning sunshine after a cute little hammock camping excursion at the Ellwood bluffs.',
+    createdAt: '2025-10-13',
+  }, 
+  {
+    imageUrl: 'images/aug_binos.JPG',
+    imageAlt: 'August peers through a pair of binocs',
+    caption: 'August scans the Pacific coastline through a teeny pair of binocs.',
+    createdAt: '2026-02-24',
+  },
+  {
+    imageUrl: 'images/started_blastin.png',
+    imageAlt: 'So anyways, I started blasting',
+    caption: 'So anyways, I started blasting.',
+    createdAt: '2025-01-01',
+  }, 
+  {
+    imageUrl: 'images/smoove-off.jpg',
+    imageAlt: 'My head gets blown smoove off',
+    caption: 'I\'m finna blow my shit smoove off.',
+    createdAt: '2024-08-13',
+  },
+  {
+    imageUrl: 'images/black_peak.JPG',
+    imageAlt: 'Black peak hovers above King\'s Canyon',
+    caption: 'Black Peak rises solemnly above the Bubbs Creek Valley, Kings Canyon Wilderness.',
+    createdAt: '2025-10-19',
+  },
+  {
+    imageUrl: 'images/german_family.JPG',
+    imageAlt: 'Father and son in Wadi Rum',
+    caption: 'Johannes and Peter in the Wadi.',
+    createdAt: '2026-01-11',
+  },
+   // row ---------------
+  {
+    imageUrl: 'images/tomfoolin.jpg',
+    imageAlt: 'Tomfoolery in Three Rivers',
+    caption: 'Honest tomfoolery cures all ails.',
+    createdAt: '2025-06-25',
+  },
+  {
+    imageUrl: 'images/jtreeHunt.jpg',
+    imageAlt: 'Hunter in Joshua Tree',
+    caption: 'Hunter gazes out over his domain. As king of these barren wastes, his boundless aspiration for conquest of greener lands verges upon insanity.',
+    createdAt: '2025-02-21',
+  },
+  {
+    imageUrl: 'images/tripoli_souk.JPG',
+    imageAlt: 'Bustling souk in Tripoli',
+    caption: 'A day like any other in the great souk of Tripoli, intensely beautiful in every detail.',
+    createdAt: '2025-12-22',
+  },
+   // row ---------------
+   {
+    imageUrl: 'images/hunter_bacon.jpg',
+    imageAlt: 'Hunter eats bacon',
+    caption: 'Why isn\'t this on the cover of Time magazine?',
+    createdAt: '2025-04-26',
+  },
+  {
+    imageUrl: 'images/playgrounds_climb.jpg',
+    imageAlt: 'Climbing at playgrounds',
+    caption: 'Bluer than blue, you could feel the sky with your fingertips in a day\'s climb at Playgrounds.',
+    createdAt: '2026-02-05',
+  },
+  {
+    imageUrl: 'images/jer_grin.JPG',
+    imageAlt: 'Jeremy grins',
+    caption: 'Jeremy cheesing after a day well spent.',
+    createdAt: '2026-02-03',
+  },
+   // row ---------------
+  {
+    imageUrl: 'images/dunes.JPEG',
+    imageAlt: 'Sunset in the dunes at Pismo',
+    caption: 'The Sun sets over the dunes at Pismo.',
+    createdAt: '2025-06-30',
+  },
+  {
+    imageUrl: 'images/aspens_walk.JPG',
+    imageAlt: 'Aspens in the fall',
+    caption: 'Things are most beautiful\nright before they fade away\nlike aspens in the fall.',
+    createdAt: '2025-11-19',
+  },
+  {
+    imageUrl: 'images/jackndunc.JPG',
+    imageAlt: 'Jack and Duncan',
+    caption: 'Tweedle dee and tweedle dum, lights full blast and covered in what would appear to be an errant Coors banquet.',
+    createdAt: '2026-02-04',
+  },
+   // row ---------------
+   {
+    imageUrl: 'images/slab.jpg',
+    imageAlt: 'Bakin bread in the Canyon',
+    caption: 'Making bread and honey butter after a shroomy day of dodging pedophiles and ICE agents.',
+    createdAt: '2025-05-03',
+  },
+  {
+    imageUrl: 'images/palmyr_dog.jpg',
+    imageAlt: 'Dog stretches at Palmyra',
+    caption: 'A dog stretches in Palmyra three days after a massive American bombing campaign to "wipe out ISIS sleeper cells". The bedouin surrounding the area were seriously on-edge and I got more than a fair share of dirty looks.',
+    createdAt: '2025-12-22',
+  },
+  {
+    imageUrl: 'images/mountain_camp.JPG',
+    imageAlt: 'Mountain Camp',
+    caption: 'Camping atop a water tower is nice in theory but it does mean 30mph winds at 2am.',
+    createdAt: '2025-05-16',
+  },
+
 ];
