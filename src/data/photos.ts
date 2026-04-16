@@ -310,11 +310,11 @@ export const photos: Photo[] = [
     createdAt: '2026-02-17',
   }, 
   {
-    imageUrl: 'images/dvfilm3.jpg',
-    imageAlt: 'Three wise men in the Panamint Range',
-    caption: 'Back on the basalt ridge above the Jeep and coming down off a particularly strong batch of mushrooms, the party stops to collect itself.',
-    createdAt: '2025-03-15',
-  }, 
+    imageUrl: 'images/hunter_bacon.jpg',
+    imageAlt: 'Hunter eats bacon',
+    caption: 'Why isn\'t this on the cover of Time magazine?',
+    createdAt: '2025-04-26',
+  },
   {
     imageUrl: 'images/bread-seller.JPG',
     imageAlt: 'Bread seller in Tripoli',
@@ -478,7 +478,7 @@ export const photos: Photo[] = [
   },
    // row ---------
    {
-    imageUrl: 'images/biergarten.jpg',
+    imageUrl: 'images/biergarten.png',
     imageAlt: 'Last hurrahs at the biergarten',
     caption: 'Last hurrahs at the biergarten with some of the best people on earth.',
     createdAt: '2025-06-14',
@@ -658,18 +658,18 @@ export const photos: Photo[] = [
     createdAt: '2025-02-21',
   },
   {
-    imageUrl: 'images/tripoli_souk.JPG',
-    imageAlt: 'Bustling souk in Tripoli',
-    caption: 'A day like any other in the great souk of Tripoli, intensely beautiful in every detail.',
-    createdAt: '2025-12-22',
-  },
+    imageUrl: 'images/auggie.JPG',
+    imageAlt: 'A boy and his baguette',
+    caption: 'A boy and his baguette.',
+    createdAt: '2025-03-17',
+  }, 
    // row ---------------
-   {
-    imageUrl: 'images/hunter_bacon.jpg',
-    imageAlt: 'Hunter eats bacon',
-    caption: 'Why isn\'t this on the cover of Time magazine?',
-    createdAt: '2025-04-26',
-  },
+  {
+    imageUrl: 'images/bobnjack.jpeg',
+    imageAlt: 'Bob has his way with Jack',
+    caption: 'Bob has his way with Jack during the construction of the Great Beeramid of Giza.',
+    createdAt: '2026-02-17',
+  }, 
   {
     imageUrl: 'images/playgrounds_climb.jpg',
     imageAlt: 'Climbing at playgrounds',
@@ -683,23 +683,23 @@ export const photos: Photo[] = [
     createdAt: '2026-02-03',
   },
    // row ---------------
-  {
-    imageUrl: 'images/dunes.JPEG',
-    imageAlt: 'Sunset in the dunes at Pismo',
-    caption: 'The Sun sets over the dunes at Pismo.',
-    createdAt: '2025-06-30',
+   {
+    imageUrl: 'images/ishtar.JPG',
+    imageAlt: 'The gates of Ishtar',
+    caption: 'The gates of Ishtar — entry into Babylon. Lesser-known is the fact that this is also the entry gate to Saddam Hussein\'s palace.',
+    createdAt: '2025-12-29',
   },
   {
     imageUrl: 'images/aspens_walk.JPG',
     imageAlt: 'Aspens in the fall',
-    caption: 'Things are most beautiful\nright before they fade away\nlike aspens in the fall.',
+    caption: 'Things are most beautiful\nright before they fade to grey\nlike aspens in the fall.',
     createdAt: '2025-11-19',
   },
   {
-    imageUrl: 'images/jackndunc.JPG',
-    imageAlt: 'Jack and Duncan',
-    caption: 'Tweedle dee and tweedle dum, lights full blast and covered in what would appear to be an errant Coors banquet.',
-    createdAt: '2026-02-04',
+    imageUrl: 'images/mountain_camp.JPG',
+    imageAlt: 'Mountain Camp',
+    caption: 'Camping atop a water tower is nice in theory but it does mean 30mph winds at 2am.',
+    createdAt: '2025-05-16',
   },
    // row ---------------
    {
@@ -715,10 +715,184 @@ export const photos: Photo[] = [
     createdAt: '2025-12-22',
   },
   {
-    imageUrl: 'images/mountain_camp.JPG',
-    imageAlt: 'Mountain Camp',
-    caption: 'Camping atop a water tower is nice in theory but it does mean 30mph winds at 2am.',
-    createdAt: '2025-05-16',
+    imageUrl: 'images/jackndunc.JPG',
+    imageAlt: 'Jack and Duncan',
+    caption: 'Tweedle dee and tweedle dum, lights full blast and covered in what would appear to be an errant Coors banquet.',
+    createdAt: '2026-02-04',
   },
-
+  {
+    imageUrl: 'images/dvfilm3.jpg',
+    imageAlt: 'Three wise men in the Panamint Range',
+    caption: 'Back on the basalt ridge above the Jeep and coming down off a particularly strong batch of mushrooms, the party stops to collect itself.',
+    createdAt: '2025-03-15',
+  }, 
+  {
+    imageUrl: 'images/tripoli_souk.JPG',
+    imageAlt: 'Bustling souk in Tripoli',
+    caption: 'A day like any other in the great souk of Tripoli, intensely beautiful in every detail.',
+    createdAt: '2025-12-22',
+  },
+  {
+    imageUrl: 'images/fooling.JPG',
+    imageAlt: 'The aftermath of Kraken night',
+    caption: 'The two last braincells having some amazing times together.',
+    createdAt: '2024-10-29',
+  },
+  // row --------------------
+  {
+    imageUrl: 'images/facetats.JPG',
+    imageAlt: 'Drawing a peace sign on Reb',
+    caption: 'Drawing a peace sign on Reb, on the eve of everyone\'s departure in Spring 2025.',
+    createdAt: '2025-06-20',
+  },
+  {
+    imageUrl: 'images/vogue.jpg',
+    imageAlt: 'Black and white three youths.',
+    caption: 'This one\'s particularly homoerotic, I\'m not entirely sure how I feel about it.',
+    createdAt: '2026-04-12',
+  },
+  {
+    imageUrl: 'images/serpent-crag.jpg',
+    imageAlt: 'Serpent Crag on the Rae Lakes Loop',
+    caption: 'I don\'t know what this mountain is called, but I named it "Serpent Crag" on my 4-day solo trek through the area.',
+    createdAt: '2026-11-02',
+  },
+  // row ---------------
+  {
+    imageUrl: 'images/citadel.JPG',
+    imageAlt: 'The citadel above Tripoli.',
+    caption: 'This citadel in northern Lebanon is now a military zone, owing to a recent extremist uprising that used the fortress as a genuine military strategic point from which they fired upon locals.',
+    createdAt: '2025-12-20',
+  },
+  {
+    imageUrl: 'images/backyard_dog.jpg',
+    imageAlt: 'The puppy in the backyard',
+    caption: 'Puppy!!!!!',
+    createdAt: '2014-02-20',
+  },
+  {
+    imageUrl: 'images/thousand.jpg',
+    imageAlt: 'A walk around Mirror Lake',
+    caption: 'Last walk around Mirror Lake.',
+    createdAt: '2025-10-30',
+  },
+  // row ---------------
+  {
+    imageUrl: 'images/gabi_party.jpg',
+    imageAlt: 'Early-college party at Gabi\'s',
+    caption: 'Eastern european culture aplenty at Gabi\'s house in the early days of uni.',
+    createdAt: '2024-01-13',
+  },
+  {
+    imageUrl: 'images/hunter-surprised.JPG',
+    imageAlt: 'Hunter is surprised.',
+    caption: 'Caught unawares, he is. A foolish creature, but painfully beautiful.',
+    createdAt: '2025-04-04',
+  },
+  {
+    imageUrl: 'images/byblos.jpg',
+    imageAlt: 'The shipbuilder\'s arches in Byblos',
+    caption: 'Three women in the evening sun at the old Phoenician shipbuilding site in Byblos.',
+    createdAt: '2025-12-18',
+  },
+  // row ---------------
+  {
+    imageUrl: 'images/playgrounds-dog.jpeg',
+    imageAlt: 'Dog at playgrounds',
+    caption: 'I won\'t say this dog we met at Playgrounds was fat, but there certainly was a lot of him to love.',
+    createdAt: '2026-01-29',
+  },
+  {
+    imageUrl: 'images/minaret.JPG',
+    imageAlt: 'The minaret of the Great Mosque',
+    caption: 'The White Minaret overlooks a square full of sights and sounds —— and guns, lots of guns.',
+    createdAt: '2025-12-23',
+  },
+  {
+    imageUrl: 'images/spanish-coop.JPG',
+    imageAlt: 'Jack\'s birthday!',
+    caption: 'It\'s Jack\'s birthday! Mission of the night is to get wine drunk and belligerent at the Spanish internationals co-op!',
+    createdAt: '2025-06-19',
+  },
+  // row ---------------
+  {
+    imageUrl: 'images/chorizo_group.jpg',
+    imageAlt: 'The gang at chorizo plains',
+    caption: 'We make merry on the Chorizo Plains — as, many miles away, Jeremy\'s life is flashing before his eyes as he books it offroad in his Honda Civic, away from the hanging noose and the spooky cows.',
+    createdAt: '2026-02-18',
+  },
+  {
+    imageUrl: 'images/treenet.JPG',
+    imageAlt: 'Millie and Rosie in the tree net',
+    caption: 'Life\'s a peach when you\'re in a tree.',
+    createdAt: '2026-03-18',
+  },
+  {
+    imageUrl: 'images/fantastic.jpg',
+    imageAlt: 'Something out of an adjacent dimension.',
+    caption: 'Dream sequence from an adjacent dimension.',
+    createdAt: '2025-07-11',
+  },
+  // row ---------------
+  {
+    imageUrl: 'images/lizmouth-cousins.JPG',
+    imageAlt: 'The cousins at Liz Mouth',
+    caption: 'Taking the cousins to Lizard\'s Mouth.',
+    createdAt: '2026-11-17',
+  },
+  {
+    imageUrl: 'images/mednight-drunk.JPG',
+    imageAlt: 'Sloshed on mediterranean night',
+    caption: 'Already sloshed at August\'s mediterranean night, prior to our ill-fated adventure downtown, and our inevitably hungover drive to Death Valley the following morning.',
+    createdAt: '2025-04-13',
+  },
+  {
+    imageUrl: 'images/maaloula-berg.JPG',
+    imageAlt: 'The berg at Maaloula',
+    caption: 'The berg at Maaloula rises towards the cross erected on its eastward summit, heralding — as I was told by the nuns at the monastery — the return of Jesus Christ.',
+    createdAt: '2025-12-20',
+  },
+  // row ---------------
+  {
+    imageUrl: 'images/techno-night.jpg',
+    imageAlt: 'Techno night',
+    caption: 'Anya\'s techno night at the German house, which we hit on the way back from Ale\'s birthday function.',
+    createdAt: '2025-05-20',
+  },
+  {
+    imageUrl: 'images/cathrin-bounces.jpg',
+    imageAlt: 'Cathrin bounces on a trampoline',
+    caption: 'It may be a mad max style wasteland full of crackheads, rabid dogs, and unregistered firearms, but there is a trampoline, and Cathrin will bounce on it.',
+    createdAt: '2025-03-15',
+  },
+  {
+    imageUrl: 'images/iran_sun.JPG',
+    imageAlt: 'The sun sets over Iran',
+    caption: 'The sun sets over Iran, from across the Persian Gulf.',
+    createdAt: '2026-01-20',
+  },
+  {
+    imageUrl: 'images/dunes.JPEG',
+    imageAlt: 'Sunset in the dunes at Pismo',
+    caption: 'We walk to the dunes for our 4/20 excursion.',
+    createdAt: '2025-04-20',
+  },
+  /*{
+    imageUrl: 'images/fire-sky.JPG',
+    imageAlt: 'A fire in the sky',
+    caption: 'A fire in the sky.',
+    createdAt: '2026-02-29',
+  },*/
+  {
+    imageUrl: 'images/candles.JPG',
+    imageAlt: 'Candles',
+    caption: 'Bright and silent, candles were the source of most of the light in this Orthodox Church.',
+    createdAt: '2025-12-10',
+  },
+  {
+    imageUrl: 'images/cheeese.JPG',
+    imageAlt: 'Cheese!',
+    caption: 'Cheeeeese!',
+    createdAt: '2026-01-21',
+  },
 ];
