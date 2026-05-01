@@ -3,14 +3,20 @@ import { readFileSync, existsSync, mkdirSync } from 'fs';
 import { join, basename } from 'path';
 
 const THUMB_SIZE = 600;
-const PHOTOS_FILE = join(import.meta.dirname, '..', 'src', 'data', 'photos.ts');
+const DATA_DIR = join(import.meta.dirname, '..', 'src', 'data');
 const PUBLIC_DIR = join(import.meta.dirname, '..', 'public');
 const THUMBS_DIR = join(PUBLIC_DIR, 'images', 'thumbs');
 
 mkdirSync(THUMBS_DIR, { recursive: true });
 
-const src = readFileSync(PHOTOS_FILE, 'utf-8');
-const urls = [...src.matchAll(/imageUrl:\s*['"]([^'"]+)['"]/g)].map((m) => m[1]);
+const dataFiles = ['photos.ts', 'stories.ts', 'reviews.ts'];
+const urls = [];
+for (const file of dataFiles) {
+  const filePath = join(DATA_DIR, file);
+  if (!existsSync(filePath)) continue;
+  const src = readFileSync(filePath, 'utf-8');
+  urls.push(...[...src.matchAll(/imageUrl:\s*['"]([^'"]+)['"]/g)].map((m) => m[1]));
+}
 
 let created = 0;
 let skipped = 0;

@@ -725,7 +725,19 @@ export const photos: Photo[] = [
     imageAlt: 'Three wise men in the Panamint Range',
     caption: 'Back on the basalt ridge above the Jeep and coming down off a particularly strong batch of mushrooms, the party stops to collect itself.',
     createdAt: '2025-03-15',
-  }, 
+  },
+  {
+    imageUrl: 'images/sar.JPG',
+    imageAlt: 'Sarah with strange things in the back',
+    caption: 'Robert and Noah seem to be doing things behind Sarah\'s back.',
+    createdAt: '2025-11-27',
+  },
+  {
+    imageUrl: 'images/fooling.JPG',
+    imageAlt: 'The aftermath of Kraken night',
+    caption: 'The two last braincells having some amazing times together.',
+    createdAt: '2024-10-29',
+  },
   {
     imageUrl: 'images/tripoli_souk.JPG',
     imageAlt: 'Bustling souk in Tripoli',
@@ -733,10 +745,16 @@ export const photos: Photo[] = [
     createdAt: '2025-12-22',
   },
   {
-    imageUrl: 'images/fooling.JPG',
-    imageAlt: 'The aftermath of Kraken night',
-    caption: 'The two last braincells having some amazing times together.',
-    createdAt: '2024-10-29',
+    imageUrl: 'images/august-gun.JPG',
+    imageAlt: 'Cupertino things',
+    caption: 'Just Cupertino things.',
+    createdAt: '2026-02-24',
+  },
+  {
+    imageUrl: 'images/millie.JPG',
+    imageAlt: 'Millie is happy :)',
+    caption: 'Millie is one happy cookie :)',
+    createdAt: '2026-02-21',
   },
   // row --------------------
   {
@@ -746,16 +764,16 @@ export const photos: Photo[] = [
     createdAt: '2025-06-20',
   },
   {
-    imageUrl: 'images/vogue.jpg',
-    imageAlt: 'Black and white three youths.',
-    caption: 'This one\'s particularly homoerotic, I\'m not entirely sure how I feel about it.',
-    createdAt: '2026-04-12',
-  },
-  {
     imageUrl: 'images/serpent-crag.jpg',
     imageAlt: 'Serpent Crag on the Rae Lakes Loop',
     caption: 'I don\'t know what this mountain is called, but I named it "Serpent Crag" on my 4-day solo trek through the area.',
     createdAt: '2026-11-02',
+  },
+  {
+    imageUrl: 'images/vogue.jpg',
+    imageAlt: 'Black and white three youths.',
+    caption: 'This one\'s particularly homoerotic, I\'m not entirely sure how I feel about it.',
+    createdAt: '2026-04-12',
   },
   // row ---------------
   {

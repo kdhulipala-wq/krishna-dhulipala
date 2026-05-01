@@ -6,6 +6,10 @@ import { sortByMode } from '../utils/sort';
 import type { SortMode } from '../utils/sort';
 import SortToggle from '../components/SortToggle';
 
+function thumbUrl(imageUrl: string): string {
+  return imageUrl.replace('images/', 'images/thumbs/');
+}
+
 function formatDate(iso: string) {
   return new Date(iso).toLocaleDateString('en-US', {
     year: 'numeric',
@@ -35,7 +39,7 @@ export default function StoriesPage() {
             <div className="flex flex-col sm:flex-row">
               <div className="sm:w-48 sm:h-48 h-48 shrink-0 overflow-hidden bg-black/20">
                 <img
-                  src={asset(story.imageUrl)}
+                  src={asset(thumbUrl(story.imageUrl))}
                   alt={story.imageAlt}
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                 />
